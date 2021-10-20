@@ -1,0 +1,26 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+RewriteRule ^berita/([0-9a-zA-Z_-]+) isi_halaman/artikel.php?slug=$1
+RewriteRule ^datadesa/([0-9a-zA-Z_-]+) isi_halaman/i_data-desa.php?slug=$1
+RewriteRule ^kelembagaan/([0-9a-zA-Z_-]+) isi_halaman/i_kelembagaan.php?slug=$1
+RewriteRule ^profil/([0-9a-zA-Z_-]+) isi_halaman/i_profile.php?slug=$1
+RewriteRule ^gallery([0-9]+) gallery.php?g=$1
+RewriteRule ^berita([0-9]+) berita.php?id=$1
+RewriteRule ^kelembagaan([0-9]+) kelembagaan?id=$1
+RewriteRule ^profil([0-9]+) profil?id=$1
+RewriteRule ^datadesa([0-9]+) datadesa?id=$1
+RewriteRule ^tampil([0-9a-zA-Z_-]+) tampil.php?slug=$1
+RewriteRule ^tempat/([0-9a-zA-Z_-]+) isi_halaman/i_tempat.php?slug=$1
+RewriteRule ^tempat([0-9]+) tempat.php?id=$1
+RewriteRule ^sitemap.xml sitemap.php
+Options All -Indexes
+</IfModule>
+
+DirectoryIndex index.php index.html index.htm index2.html
+
+ErrorDocument 403 desa/404
+ErrorDocument 404 desa/404
+ErrorDocument 500 https://infinityfree.net/errors/500/

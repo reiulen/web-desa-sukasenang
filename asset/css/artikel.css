@@ -1,0 +1,252 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.banner-artikel::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.float-button-sosmed {
+  position: fixed;
+  left: 8px;
+  top: 20%;
+  z-index: 999;
+}
+
+.banner-artikel {
+  height: 5vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.nama-halaman {
+  position: absolute;
+  content: "";
+  top: 40%;
+  left: 30%;
+  right: 30%;
+  z-index: 20;
+  text-align: center;
+  border: none;
+  color: #dadada;
+}
+
+.nama-halaman::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #dadada;
+  width: 20%;
+  margin: auto;
+}
+
+.banner-halaman {
+  background-image: url(../gambar/wave.svg);
+  height: 47vh;
+  background-size: cover;
+}
+
+.text-banner {
+  position: absolute;
+  display: block;
+  top: 20%;
+  color: #dadada !important;
+}
+
+.nama-berita {
+  font-weight: bold;
+}
+
+.nama-berita::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #73006e;
+  width: 15%;
+}
+
+.gallery .content-artikel {
+  background-color: white;
+  border: none;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+}
+
+.content-artikel .card {
+  background-color: #73006e;
+  border: none;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+}
+
+.widget-artikel .row {
+  min-height: 100px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 20px 0 rgb(0 0 0 / 7%);
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 7%);
+  background-color: #fff;
+  padding: 10px;
+}
+.content-berita::before {
+  content: "";
+  height: 20%;
+  border-left: 3px solid #73006e;
+  -webkit-transform: translate y(50%);
+  display: block;
+  position: absolute;
+  margin-left: 30px;
+}
+
+.isi-artikel {
+  text-align: justify;
+}
+
+.banner-halaman .nav-item a {
+  color: #dadada;
+  text-decoration: none;
+}
+
+.banner-halaman .nav-item a:hover {
+  text-decoration: underline;
+  border-bottom: none;
+}
+
+.page-link {
+  color: #73006e !important ;
+}
+
+.active .page-link {
+  color: #dadada !important;
+  background-color: #73006e !important;
+}
+.page-item {
+  border: none;
+  background-color: white !important;
+}
+
+.detail-tempat .isi-tempat {
+  min-height: 100px;
+  margin: auto;
+  -webkit-box-shadow: 0 5px 20px 0 rgb(0 0 0 / 7%);
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 7%);
+  background-color: #fff;
+  padding: 20px;
+}
+
+.share-halaman .bagikan::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #73006e;
+  width: 10%;
+}
+
+.share-halaman ul li {
+  text-decoration: none;
+  outline-style: none;
+  list-style: none;
+  margin-right: 15px;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.share-halaman .whatsapp {
+  background-color: #25d366;
+  border-radius: 100%;
+  color: white;
+  padding: 8px 14px;
+  -webkit-box-shadow: 0 5px 20px 0 rgb(0 0 0 / 30%);
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 30%);
+}
+
+.share-halaman .twitter {
+  background-color: #1c9cea;
+  border-radius: 100px;
+  color: white;
+  padding: 9px 14px;
+  -webkit-box-shadow: 0 5px 20px 0 rgb(0 0 0 / 30%);
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 30%);
+}
+
+.share-halaman .facebook {
+  background-color: #1674ea;
+  border-radius: 50%;
+  color: white;
+  padding: 9px 17px;
+  -webkit-box-shadow: 0 5px 20px 0 rgb(0 0 0 / 30%);
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 30%);
+}
+
+.share-halaman .envelope {
+  background-color: #1674ea;
+  border-radius: 50%;
+  color: white;
+  padding: 9px 14px;
+  -webkit-box-shadow: 0 5px 20px 0 rgb(0 0 0 / 30%);
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 30%);
+}
+
+.share-halaman li:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.1);
+}
+
+.form-komen {
+  min-height: 100px;
+  -webkit-box-shadow: 0 5px 20px 0 rgb(0 0 0 / 7%);
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 7%);
+  background-color: #fff;
+  padding: 20px;
+}
+
+.page-data-penduduk .list-group {
+  min-height: 100px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 20px 0 rgb(0 0 0 / 7%);
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 7%);
+  background-color: #fff;
+  padding: 10px;
+  border: none !important;
+}
+
+.page-data-penduduk .list-group-item {
+  border-right: none !important;
+  border-left: none !important;
+  border-top: none !important;
+}
+.page-data-penduduk .list-group .active {
+  background-color: #73006e !important;
+}
+
+.page-data-penduduk .col-md-3 .col {
+  margin: auto;
+}
+
+@media (max-width: 992px) {
+  .banner-halaman {
+    background: none;
+    height: 140px;
+  }
+  .text-banner {
+    top: 16%;
+    font-size: 12px;
+    color: black !important;
+  }
+
+  .text-banner h1 {
+    display: none;
+  }
+
+  .text-banner li a {
+    color: black !important;
+  }
+  .text-banner li {
+    color: black !important;
+  }
+}
